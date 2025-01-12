@@ -1,2 +1,2 @@
 # SPRINT4-CAR-AD-PROJECT
-Triple Ten's coursework. 
+This project shows car sales data as well as visually represents that older cars are coolers than new ones. 
