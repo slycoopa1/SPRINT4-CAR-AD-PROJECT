@@ -5,12 +5,15 @@ import streamlit as st
 
 df = pd.read_csv('vehicles_us.csv')
 
+df['price'] = pd.to_numeric(df['price'], errors='coerce')
+df['price'].fillna(0, inplace=True)
+
 st.header('Old cars are cooler than new cars')
 st.write('They used to have personality')
 
 st.title('Car Sales Dashboard')
 
-if st.checkbox('Show raw data'):
+if st.checkbox('Show Raw Data'):
     st.write(df)
 
 column = st.selectbox(
